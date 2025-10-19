@@ -1,104 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Group 11 - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="container">
-            <h1 class="logo">Group 11</h1>
-            <nav aria-label="Primary">
-                <ul class="nav">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#API">API</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="container">
+        <h1 class="logo">Group 11</h1>
+        <nav aria-label="Primary">
+          <ul class="nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#API">API</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+
     <main id="content">
-        <section class="hero" aria-labelledby="intro-title">
-            <div class="container">
-                <div class="hero-grid">
-                    <figure class="profile">
-                        <img a href="#" target="_blank" id="profilephoto" src="img/bar.jpg" width="500px" alt="Portait of your Name">
-                        <figcaption>Based in Butuan City, PH</figcaption>
-                    </figure>
-                    <div>
-                        <h2 id="intro-title">Hi, I'm Marianne</h2>
-                        <p class="lead">A BSIT student studying at Caraga State University.</p>
-                    </div>
-
-                    <figure class="profile">
-                        <!-- Change to your own profile photo -->
-                         <img a href="#" target="_blank" id="profilephoto" src="img/qui.jpg" width="500px" alt="Portrait of your Name">
-                        <figcaption>Based in Butuan City, PH</figcaption>
-                    </figure>
-                    <div>
-                       <!-- Change to your own name and description -->
-                        <h2 id="intro-title">Hi, I'm Mely Kris</h2>
-                        <p class="lead">A BSIT student studying at Caraga State University.</p>
-                    </div>    
-                    
-                    <figure class="profile">
-                        <!-- Change to your own profile photo -->
-                    </figure>
-                    <div>
-                       <!-- Change to your own name and description -->
-                    </div>                        
-                </div>
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="container">
+          <div class="hero-grid">
+            <figure class="profile">
+              <img
+                id="profilephoto"
+                src="img/bar.jpg"
+                width="500"
+                alt="Portrait of Marianne"
+              />
+              <figcaption>Based in Butuan City, PH</figcaption>
+            </figure>
+            <div>
+              <h2 id="intro-title">Hi, I'm Marianne</h2>
+              <p class="lead">
+                A BSIT student studying at Caraga State University.
+              </p>
             </div>
-        </section>
-        <section id="about" class="section" aria-labelledby="about-title">
-            <div class="container">
-                <h2 id="about-title">About</h2>
 
-               <!-- About Group 11 -->
-                <p>We are a group of students working together to learn, share ideas, and create
-                    meaningful outputs. Our goal is to collaborate, develop our skills, and support
-                    each other in achieving success. Through teamwork and dedication, we aim to grow
-                    not only as individuals but also as a team.
-                </p>
-
+            <figure class="profile">
+              <img
+                id="profilephoto"
+                src="img/qui.jpg"
+                width="500"
+                alt="Portrait of Mely Kris"
+              />
+              <figcaption>Based in Butuan City, PH</figcaption>
+            </figure>
+            <div>
+              <h2>Hi, I'm Mely Kris</h2>
+              <p class="lead">
+                A BSIT student studying at Caraga State University.
+              </p>
             </div>
-        </section>
-        <section id="API" class="section" aria-labelledby="API-title">
-            <div class="container">
-                <h2 id="API-title">API</h2>
-                
-                <!-- API -->
 
+            <figure class="profile">
+              <img
+                id="profilephoto"
+                src="rei.jpg"
+                width="500"
+                alt="Portrait of Rey Mark"
+              />
+              <figcaption>Based in Butuan City, PH</figcaption>
+            </figure>
+            <div>
+              <h2>Hi, I'm Rey Mark</h2>
+              <p class="lead">
+                A BSIS student studying at Caraga State University.
+              </p>
             </div>
-        </section>
-        <section id="skills" class="section" aria-labelledby="skills-title">
-            <div class="container">
-                <h2 id="skills-title">Skills</h2>
-                <ul class="chips" role="list">
+          </div>
+        </div>
+      </section>
 
+      <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container">
+          <h2 id="about-title">About</h2>
+          <p>
+            We are a group of students working together to learn, share ideas,
+            and create meaningful outputs. Our goal is to collaborate, develop
+            our skills, and support each other in achieving success.
+          </p>
+        </div>
+      </section>
 
-                    <!-- Our Skills -->
+      <section id="API" class="section" aria-labelledby="API-title">
+        <div class="container">
+          <h2 id="API-title">API</h2>
+          <button class="new-quote btn btn-default" onclick="newQuote()">
+            New Quote
+          </button>
+          <div id="quote-container">
+            <p id="quote">Click the button to get a new quote!</p>
+            <p id="author"></p>
+          </div>
+        </div>
+      </section>
 
+      <section id="skills" class="section" aria-labelledby="skills-title">
+        <div class="container">
+          <h2 id="skills-title">Skills</h2>
+          <ul class="chips" role="list"></ul>
+        </div>
+      </section>
 
-                </ul>
-            </div>
-        </section>
-        <section id="contact" class="section" aria-labelledby="contact-title">
-            <div class="container">
-                <h2 id="contact-title">Contact</h2>
-                <address>
-                    Location: Butuan City, Philippines
-                </address>
-            </div>
-        </section> 
+      <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+          <h2 id="contact-title">Contact</h2>
+          <address>Location: Butuan City, Philippines</address>
+        </div>
+      </section>
     </main>
-    <footer class="site-footer">
-        <span id="year">2025</span>Group11
-    </footer>
 
-<script src="script.js"></script>
-</body>
+    <footer class="site-footer"><span id="year">2025</span> Group 11</footer>
+
+    <script src="json.js"></script>
+  </body>
 </html>
