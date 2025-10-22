@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Random Quote Generator | Group 11</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app-container" role="main">
+      <!-- App Header -->
+      <header class="app-header">
+        <h1>Random Quote Generator</h1>
+        <p class="muted">
+          Click “New Quote” to display an inspiring quote fetched from a public
+          API.
+        </p>
+      </header>
+
+      <!-- Quote Display -->
+      <section class="quote-card" aria-live="polite">
+        <div id="quoteText" class="quote">Fetching an inspiring quote...</div>
+        <div id="quoteAuthor" class="author"></div>
+      </section>
+
+      <!-- Controls -->
+      <section class="controls">
+        <button id="newQuoteBtn" class="btn">New Quote</button>
+      </section>
+
+      <!-- Status Message -->
+      <div id="status" class="status" role="status" aria-live="assertive"></div>
+
+      <!-- Footer -->
+      <footer class="app-footer">
+        <a href="index.html" class="btn secondary">← Back to Portfolio</a>
+        <p>
+          Source API:
+          <a
+            href="https://zenquotes.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            >ZenQuotes.io</a
+          >
+        </p>
+      </footer>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
