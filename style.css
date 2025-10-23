@@ -19,7 +19,10 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; 
+}
 
 .navbar {
     background: #222;
@@ -29,6 +32,15 @@ body {
     position: sticky; 
     top: 0;
     z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar ul {
@@ -126,6 +138,11 @@ h2 {
     color: #222;
     margin-bottom: 8px;
     font-family: 'Poppins', sans-serif;
+}
+.member-card a {
+  text-decoration: none; 
+  color: inherit; 
+  display: block; 
 }
 
 .member-card p.role {
@@ -271,6 +288,17 @@ header, .app-header
 {
   text-align: center;
   margin-top: 20px;
+}
+
+p, li {
+    font-family: 'Merriweather', serif;
+}
+
+#about p,
+#project p,
+#skills p {
+  text-align: justify;
+  text-indent: 2em;
 }
 
 

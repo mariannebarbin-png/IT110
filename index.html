@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,112 +11,99 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- Navigation -->
     <nav class="navbar">
-      <ul>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1>Group 11</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#team">Team</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li> 
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
-    <!-- Header -->
-    <header>
-      <h1>Group 11 - IT110 Midterm Project</h1>
-      <p class="lead">Project: Random Quote Generator (using external API)</p>
-      <p>
-        We are <strong>Group 11</strong> of BSIT students from Caraga State
-        University, passionate about learning web development and API
-        integration. This portfolio showcases our teamwork, creativity, and
-        problem-solving skills as we built a dynamic Random Quote Generator.
-      </p>
-    </header>
-
     <main>
+      <!-- Team Section -->
+      <section id="team">
+        <h2>Team Members</h2>
+        <div class="members-grid">
+          <article class="member-card">
+            <a href="https://mariannebarbin-png.github.io/110portfoliorey/" target="_blank">
+              <img src="img/rei.png" alt="Profile picture of Reymark Aurea" />
+              <h3>Reymark Aurea</h3>
+              <p class="role">JavaScript Logic & API Integration</p>
+              <p class="description">
+                Focus on the core functionality and management of API requests using
+                async/await, while also contributing to debugging and documentation.
+              </p>
+            </a>
+          </article>
+
+          <article class="member-card">
+            <a href="https://mariannebarbin-png.github.io/110portfolio/" target="_blank">
+              <img src="img/bar.png" alt="Profile picture of Marianne Barbin" />
+              <h3>Marianne Barbin</h3>
+              <p class="role">HTML Structure & Semantics</p>
+              <p class="description">
+                Specializing on the HTML structure for both pages and ensures semantic
+                organization for accessibility and clarity.
+              </p>
+            </a>
+          </article>
+
+          <article class="member-card">
+            <a href="https://mariannebarbin-png.github.io/110portfoliomel/" target="_blank">
+              <img src="img/qui.png" alt="Profile picture of Mely Kris Damarillo Quilaton" />
+              <h3>Mely Kris Quilaton</h3>
+              <p class="role">CSS Styling & Layout</p>
+              <p class="description">
+                Core points on Designing and styling interface using CSS. Focused on layout,
+                color harmony, and responsiveness for better user experience.
+              </p>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>About Us</h2>
+        <p>
+          We are a group of students passionate about web development, specializing in HTML, CSS, and JavaScript.
+          We work together to build responsive, creative, and user-friendly projects through collaboration and innovation.
+        </p>
+      </section>
+
       <!-- Project Section -->
       <section id="project">
         <div class="container">
           <h2>Project Description</h2>
           <p>
-            This project is a <strong>Random Quote Generator</strong> that
-            fetches inspiring quotes from a public API and displays them to the
-            user. It demonstrates our understanding of JavaScript's
-            <code>fetch</code> and <code>async/await</code> features, error
+            A collaborated, simple yet functional web app that retrieves and displays random quotes from an API.
+            This <strong>Random Quote Generator</strong> fetches inspiring quotes from a public API and displays them to the user.
+            It demonstrates our understanding of JavaScript's <code>fetch</code> and <code>async/await</code> features, error
             handling, and interactive web design.
           </p>
-          <ul>
-            <li>Main API used:
-              <code>https://zenquotes.io/api/random</code>
-            </li>
-            <li>Files included:
-              <code>index.html</code>,
-              <code>app.html</code>,
-              <code>style.css</code>,
-              <code>script.js</code>
-            </li>
-          </ul>
           <div class="center-btn">
             <a href="app.html" class="btn">Open Random Quote Generator</a>
           </div>
         </div>
       </section>
 
-      <!-- About Section -->
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          Our group collaborated to build a simple yet functional web app that
-          retrieves and displays random quotes from an API. Through this
-          project, we learned the importance of teamwork, clean code, and
-          responsive web design.
-        </p>
-      </section>
-
-      <!-- Team Section -->
-      <section id="team">
-        <h2>Team Members</h2>
-        <div class="members-grid">
-          <article class="member-card">
-            <img src="img/rei.jpg" alt="Profile picture of Reymark Aurea" />
-            <h3>Reymark Aurea</h3>
-            <p class="role">JavaScript Logic & API Integration</p>
-            <p class="description">
-              Developed the core functionality and managed API requests using
-              async/await. Also contributed to debugging and documentation.
-            </p>
-          </article>
-
-          <article class="member-card">
-            <img src="img/bar.jpg" alt="Profile picture of Marianne Barbin" />
-            <h3>Marianne Barbin</h3>
-            <p class="role">HTML Structure & Semantics</p>
-            <p class="description">
-              Built the HTML structure for both pages and ensured semantic
-              organization for accessibility and clarity.
-            </p>
-          </article>
-
-          <article class="member-card">
-            <img
-              src="img/qui.jpg"
-              alt="Profile picture of Mely Kris Damarillo Quilaton"
-            />
-            <h3>Mely Kris Quilaton</h3>
-            <p class="role">CSS Styling & Layout</p>
-            <p class="description">
-              Designed and styled the interface using CSS. Focused on layout,
-              color harmony, and responsiveness for better user experience.
-            </p>
-          </article>
-        </div>
-      </section>
-
       <!-- Skills Section -->
       <section id="skills">
         <h2>Skills</h2>
+        <p>
+          The group has a background in front-end development, specializing in HTML, CSS, and JavaScript to create responsive and dynamic websites.
+          We're skilled at writing clean, well-documented code and working effectively in a team environment to deliver high-quality projects.
+        </p>
         <div class="skills">
           <div class="row">
             <div class="skill-item padd-15">
@@ -158,9 +146,9 @@
     <footer id="contact">
       <div class="contact-info">
         <p>
-          reymark.aurea@carsu.edu.ph |
-          marianne.barbin@carsu.edu.ph |
-          melykris.quilaton@carsu.edu.ph
+          <a href="mailto:reymark.aurea@carsu.edu.ph">reymark.aurea@carsu.edu.ph</a> |
+          <a href="mailto:marianne.barbin@carsu.edu.ph">marianne.barbin@carsu.edu.ph</a> |
+          <a href="mailto:melykris.quilaton@carsu.edu.ph">melykris.quilaton@carsu.edu.ph</a>
         </p>
         <p>© 2025 Group 11 | IT110 Midterm Project | Caraga State University</p>
       </div>
