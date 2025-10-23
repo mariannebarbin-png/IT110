@@ -3,120 +3,169 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Group 11 - Portfolio</title>
+    <title>IT110 Midterm Project | Group 11</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="site-header">
-      <div class="container">
-        <h1 class="logo">Group 11</h1>
-        <nav aria-label="Primary">
-          <ul class="nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#API">API</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>Group 11 - IT110 Midterm Project</h1>
+      <p class="lead">Project: Random Quote Generator (using external API)</p>
+      <p>
+        We are <strong>Group 11</strong> of BSIT students from Caraga State
+        University, passionate about learning web development and API
+        integration. This portfolio showcases our teamwork, creativity, and
+        problem-solving skills as we built a dynamic Random Quote Generator.
+      </p>
     </header>
 
-    <main id="content">
-      <section class="hero" aria-labelledby="intro-title">
+    <main>
+      <!-- Project Section -->
+      <section id="project">
         <div class="container">
-          <div class="hero-grid">
-            <figure class="profile">
-              <img
-                id="profilephoto"
-                src="img/bar.jpg"
-                width="500"
-                alt="Portrait of Marianne"
-              />
-              <figcaption>Based in Butuan City, PH</figcaption>
-            </figure>
-            <div>
-              <h2 id="intro-title">Hi, I'm Marianne</h2>
-              <p class="lead">
-                A BSIT student studying at Caraga State University.
-              </p>
-            </div>
-
-            <figure class="profile">
-              <img
-                id="profilephoto"
-                src="img/qui.jpg"
-                width="500"
-                alt="Portrait of Mely Kris"
-              />
-              <figcaption>Based in Butuan City, PH</figcaption>
-            </figure>
-            <div>
-              <h2>Hi, I'm Mely Kris</h2>
-              <p class="lead">
-                A BSIT student studying at Caraga State University.
-              </p>
-            </div>
-
-            <figure class="profile">
-              <img
-                id="profilephoto"
-                src="rei.jpg"
-                width="500"
-                alt="Portrait of Rey Mark"
-              />
-              <figcaption>Based in Butuan City, PH</figcaption>
-            </figure>
-            <div>
-              <h2>Hi, I'm Rey Mark</h2>
-              <p class="lead">
-                A BSIS student studying at Caraga State University.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section" aria-labelledby="about-title">
-        <div class="container">
-          <h2 id="about-title">About</h2>
+          <h2>Project Description</h2>
           <p>
-            We are a group of students working together to learn, share ideas,
-            and create meaningful outputs. Our goal is to collaborate, develop
-            our skills, and support each other in achieving success.
+            This project is a <strong>Random Quote Generator</strong> that
+            fetches inspiring quotes from a public API and displays them to the
+            user. It demonstrates our understanding of JavaScript's
+            <code>fetch</code> and <code>async/await</code> features, error
+            handling, and interactive web design.
           </p>
-        </div>
-      </section>
-
-      <section id="API" class="section" aria-labelledby="API-title">
-        <div class="container">
-          <h2 id="API-title">API</h2>
-          <button class="new-quote btn btn-default" onclick="newQuote()">
-            New Quote
-          </button>
-          <div id="quote-container">
-            <p id="quote">Click the button to get a new quote!</p>
-            <p id="author"></p>
+          <ul>
+            <li>Main API used:
+              <code>https://zenquotes.io/api/random</code>
+            </li>
+            <li>Files included:
+              <code>index.html</code>,
+              <code>app.html</code>,
+              <code>style.css</code>,
+              <code>script.js</code>
+            </li>
+          </ul>
+          <div class="center-btn">
+            <a href="app.html" class="btn">Open Random Quote Generator</a>
           </div>
         </div>
       </section>
 
-      <section id="skills" class="section" aria-labelledby="skills-title">
-        <div class="container">
-          <h2 id="skills-title">Skills</h2>
-          <ul class="chips" role="list"></ul>
+      <!-- About Section -->
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Our group collaborated to build a simple yet functional web app that
+          retrieves and displays random quotes from an API. Through this
+          project, we learned the importance of teamwork, clean code, and
+          responsive web design.
+        </p>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team">
+        <h2>Team Members</h2>
+        <div class="members-grid">
+          <article class="member-card">
+            <img src="img/rei.jpg" alt="Profile picture of Reymark Aurea" />
+            <h3>Reymark Aurea</h3>
+            <p class="role">JavaScript Logic & API Integration</p>
+            <p class="description">
+              Developed the core functionality and managed API requests using
+              async/await. Also contributed to debugging and documentation.
+            </p>
+          </article>
+
+          <article class="member-card">
+            <img src="img/bar.jpg" alt="Profile picture of Marianne Barbin" />
+            <h3>Marianne Barbin</h3>
+            <p class="role">HTML Structure & Semantics</p>
+            <p class="description">
+              Built the HTML structure for both pages and ensured semantic
+              organization for accessibility and clarity.
+            </p>
+          </article>
+
+          <article class="member-card">
+            <img
+              src="img/qui.jpg"
+              alt="Profile picture of Mely Kris Damarillo Quilaton"
+            />
+            <h3>Mely Kris Quilaton</h3>
+            <p class="role">CSS Styling & Layout</p>
+            <p class="description">
+              Designed and styled the interface using CSS. Focused on layout,
+              color harmony, and responsiveness for better user experience.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section id="contact" class="section" aria-labelledby="contact-title">
-        <div class="container">
-          <h2 id="contact-title">Contact</h2>
-          <address>Location: Butuan City, Philippines</address>
+      <!-- Skills Section -->
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="row">
+            <div class="skill-item padd-15">
+              <h5>HTML</h5>
+              <div class="progress">
+                <div class="progress-in" style="width: 96%"></div>
+                <div class="skill-percent">96%</div>
+              </div>
+            </div>
+
+            <div class="skill-item padd-15">
+              <h5>CSS</h5>
+              <div class="progress">
+                <div class="progress-in" style="width: 85%"></div>
+                <div class="skill-percent">85%</div>
+              </div>
+            </div>
+
+            <div class="skill-item padd-15">
+              <h5>JavaScript</h5>
+              <div class="progress">
+                <div class="progress-in" style="width: 90%"></div>
+                <div class="skill-percent">90%</div>
+              </div>
+            </div>
+
+            <div class="skill-item padd-15">
+              <h5>Teamwork & Documentation</h5>
+              <div class="progress">
+                <div class="progress-in" style="width: 95%"></div>
+                <div class="skill-percent">95%</div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer"><span id="year">2025</span> Group 11</footer>
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="contact-info">
+        <p>
+          reymark.aurea@carsu.edu.ph |
+          marianne.barbin@carsu.edu.ph |
+          melykris.quilaton@carsu.edu.ph
+        </p>
+        <p>© 2025 Group 11 | IT110 Midterm Project | Caraga State University</p>
+      </div>
+    </footer>
 
-    <script src="json.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
